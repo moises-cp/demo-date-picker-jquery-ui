@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<title>JQuery UI Date Picker</title>
+</head>
+<body id="home">
+
+  
+<input type="text" name="schedule-date">
+
+<script>
+    const picker = new Pikaday({ 
+      field: document.querySelector("input[name='schedule-date']"), 
+      minDate: new Date(formDate.state.minDate)
+    });
+
+    console.log('new Date(formDate.state.minDate): ', new Date(formDate.state.minDate));
+</script>
+</body>
+</html>
